@@ -45,4 +45,5 @@ jobs:
         run: |
           firebase appdistribution:distribute build/app/outputs/flutter-apk/app-release.apk \
             --app 1:173295985393:android:5b555aabb397fb09ec7f50 \
+            --testers "filanfistek8@gmail.com" \
             --release-notes "Automated release from ${GITHUB_REF_NAME} @ ${GITHUB_SHA}"
